@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sprockets/bower/version'
+require 'sprockets/bowerrc/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "sprockets-bower"
-  spec.version       = Sprockets::Bower::VERSION
+  spec.name          = "sprockets-bowerrc"
+  spec.version       = Sprockets::Bowerrc::VERSION
   spec.authors       = ["Colin Ewen"]
   spec.email         = ["colin@draecas.com"]
   spec.summary       = %q{Add the bower directory to Sprockets asset_path}
