@@ -1,4 +1,4 @@
-# Sprockets::Bower
+# Sprockets::Bowerrc
 
 Adds your bower directory to your Sprockets asset path.
 
@@ -7,7 +7,7 @@ Adds your bower directory to your Sprockets asset path.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sprockets-bower'
+gem 'sprockets-bowerrc'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install sprockets-bower
+    $ gem install sprockets-bowerrc
 
 ## Usage
 
@@ -26,9 +26,11 @@ Or install it yourself as:
 
 ```ruby
 Rails.application.config.assets.configure do |env|
-    env.use_bowerrc
+    env.append_bowerrc
 end
 ```
+
+This will append the bower directory determined by your bowerrc file to your asset path. You can instead use ```env.prepend_bowerrc``` to add it to the front.
 
 ### Rack
 
@@ -37,14 +39,17 @@ require 'sprockets'
 require 'sprockets-bower'
 map '/assets' do
   environment = Sprockets::Environment.new
-  environment.use_bowerrc
+  environment.append_bowerrc
   run environment
 end
 ```
 
+This will append the bower directory determined by your bowerrc file to your asset path. You can instead use ```environment.prepend_bowerrc``` to add it to the front.
+
+
 ## Contributing
 
-1. Fork it ( https://github.com/casao/sprockets-bower/fork )
+1. Fork it ( https://github.com/casao/sprockets-bowerrc/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
