@@ -1,4 +1,5 @@
 require "sprockets/bowerrc/version"
+require 'JSON'
 
 module Sprockets
   class Environment
@@ -26,7 +27,7 @@ module Sprockets
       def bower_config
         @bowerrc ||= POSSIBLE_BOWER_RCS.inject({}) { |memo, file|
           if File.exists?(file)
-            hash = JSON.parse(File.read(file))
+            hash = ::JSON.parse(File.read(file))
             memo.merge! hash
           end
           memo
