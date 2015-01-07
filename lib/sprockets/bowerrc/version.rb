@@ -1,5 +1,5 @@
 module Sprockets
-  module Bower
+  module Bowerrc
     VERSION = "0.0.1"
   end
 end
