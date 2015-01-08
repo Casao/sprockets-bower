@@ -2,6 +2,9 @@
 
 Adds your bower directory to your Sprockets asset path.
 
+[![Code Climate](https://codeclimate.com/github/Casao/sprockets-bowerrc/badges/gpa.svg)](https://codeclimate.com/github/Casao/sprockets-bowerrc) [![Test Coverage](https://codeclimate.com/github/Casao/sprockets-bowerrc/badges/coverage.svg)](https://codeclimate.com/github/Casao/sprockets-bowerrc) [![Build Status](https://travis-ci.org/Casao/sprockets-bowerrc.svg?branch=master)](https://travis-ci.org/Casao/sprockets-bowerrc)
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
