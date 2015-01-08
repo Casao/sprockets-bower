@@ -1,4 +1,4 @@
-Orequire "sprockets/bowerrc/version"
+require "sprockets/bowerrc/version"
 require 'json'
 
 module Sprockets
