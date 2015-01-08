@@ -1,5 +1,5 @@
-require "sprockets/bowerrc/version"
-require 'JSON'
+Orequire "sprockets/bowerrc/version"
+require 'json'
 
 module Sprockets
   class Environment
